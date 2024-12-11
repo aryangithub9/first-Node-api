@@ -1,5 +1,6 @@
 import express from 'express';
-const PORT =9000;
+import dotenv from 'dotenv'
+dotenv.config({});
 const app = express();
 
 app.use(express.json())
@@ -24,7 +25,7 @@ app.post('/name', (req,res)=>{
 })
 
 
-app.listen(PORT,()=>{
-    console.log(`Server Stared AT PORT ${PORT}`);
+app.listen(process.env.PORT,()=>{
+    console.log(`Server Stared AT PORT ${process.env.PORT}`);
 })
 
