@@ -14,6 +14,11 @@ app.get('/',(req,res)=>{
     res.send('You are On Server Now');
 })
 
+app.get('/projet', (req,res)=>{
+    res.send("You are on Project page");
+
+})
+
 app.get('/about',(req,res)=>{
     res.send('You are on About Page')
 })
